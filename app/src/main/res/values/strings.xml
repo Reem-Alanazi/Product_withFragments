@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Phones Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="product1">Iphone 12 64GB</string>
+    <string name="product2">Samsung Galaxy S21 Ultra</string>
+    <string name="product3">Xiaomi 11T Pro</string>
+    <string name="product4">Huawei Y6p</string>
+    <string name="product5">Samsung Galaxy Z Flip3</string>
+    <string name="product6">Iphone 13</string>
+
+    <string name="price1">4500 SR</string>
+    <string name="price2">4500 SR</string>
+    <string name="price3">2000 SR</string>
+    <string name="price4">500 SR</string>
+    <string name="price5">5000 SR</string>
+    <string name="price6">6000 SR</string>
+
+    <string name="quantityNumber1">5</string>
+    <string name="quantityNumber2">5</string>
+    <string name="quantityNumber3">0</string>
+    <string name="quantityNumber4">0</string>
+    <string name="quantityNumber5">70</string>
+    <string name="quantityNumber6">36</string>
+</resources>
