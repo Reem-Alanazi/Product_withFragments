@@ -14,8 +14,10 @@ import com.example.product_withfragments.model.ItemAdapter
 
 class ProductList : Fragment() {
 
-    private val viewModel : ViewModel by viewModels()
-    lateinit var binding: FragmentProductListBinding
+
+    private var _binding: FragmentProductListBinding? = null
+    private val binding get() = _binding!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,10 +25,8 @@ class ProductList : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
-        binding = FragmentProductListBinding.inflate(inflater)
+        _binding = FragmentProductListBinding.inflate(inflater)
         setHasOptionsMenu(true)
-
-
         return binding.root
 
 
@@ -36,5 +36,13 @@ class ProductList : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.recyclerView.adapter = ItemAdapter(requireContext(), Datasource().loadProduct())
         binding.recyclerView.setHasFixedSize(true)
+
+
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }

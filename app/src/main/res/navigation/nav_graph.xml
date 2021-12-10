@@ -22,5 +22,11 @@
         <action
             android:id="@+id/action_productDetail_to_productList"
             app:destination="@id/productList" />
+        <argument
+            android:name="nameOfPhone"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="integer" />
     </fragment>
 </navigation>
